@@ -26,6 +26,7 @@ const Login = () => {
   };
 
   const handleSubmit = async (e) => {
+    router.push('/dashboard')
     e.preventDefault();
 
     if (submitting) return;
