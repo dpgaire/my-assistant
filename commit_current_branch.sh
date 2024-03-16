@@ -9,16 +9,7 @@ commit_and_push_to_staging() {
     git commit -m "$commit_message"
     current_branch=$(git symbolic-ref --short HEAD)  # Get the current branch
     git push origin $current_branch
-    hub pull-request -m "$commit_message" -b staging_deploy_branch
-    hub browse  # Open the pull request page in the browser
-    # git checkout staging_deploy_branch
-    # git pull origin staging_deploy_branch
-    # read -p "Enter a branch name: " branch_name
-    # git for-each-ref --format='%(refname:short) %(authorname) %(authordate:short) %(contents:subject)' refs/remotes/ --sort=-authordate | grep "$(git config user.name)"
-    # git merge $branch_name
-    # git push origin staging_deploy_branch
-    # deploy-staging
-    # send_message
+    xdg-open 'https://github.com/dpgaire/my-assistant'
 }
 
 # Execute the function
