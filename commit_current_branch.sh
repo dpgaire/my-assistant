@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Function to commit changes, push, create pull request, and merge
+#installing hub.
 commit_and_push_to_staging() {
     read -p "Enter commit message: " commit_message
     git add .
