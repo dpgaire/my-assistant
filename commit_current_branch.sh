@@ -32,7 +32,7 @@ commit_and_push() {
         read -p "Enter user or admin for pull request: " mode
         if [ "$mode" = "admin" ]; then
             xdg-open 'https://github.com/dpgaire/my-assistant'
-            sleep 4
+            sleep 8
             simulate_mouse_click 1141 336
             sleep 1
             simulate_key_press "Return"
