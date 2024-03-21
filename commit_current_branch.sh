@@ -6,18 +6,18 @@
 #merge-pull-resquest: x:517 y:833 screen:0 window:71303217
 #confirm_merge: x:491 y:861 screen:0 window:71303217
 #finally_control: x:491 y:861 screen:0 window:71303217
-#why 
+#why git say for protections for this branch.
 
 # Function to simulate a key press.
 simulate_key_press() {
     xdotool key --clearmodifiers "$1"
-    sleep 0.5
+    sleep 1
 }
 
 # Function to simulate a mouse click.
 simulate_mouse_click() {
     xdotool mousemove --sync "$1" "$2" click 1
-    sleep 1
+    sleep 2
 }
 
 # Function to commit changes, push, create pull request, and merge
