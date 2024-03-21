@@ -34,15 +34,15 @@ commit_and_push() {
             xdg-open 'https://github.com/dpgaire/my-assistant'
             sleep 8
             simulate_mouse_click 1141 336
-            sleep 1
+            sleep 2
             simulate_key_press "Return"
             sleep 3
-            simulate_mouse_click 640 600
-            sleep 1
             xdotool type "this is the static description"
+            sleep 3
+            simulate_mouse_click 640 600
             sleep 2
             simulate_mouse_click 1139 881
-            sleep 1
+            sleep 2
             simulate_key_press "Return"
             sleep 2
             simulate_mouse_click 517 833
@@ -59,7 +59,7 @@ commit_and_push() {
             sleep 3
             xdotool key ctrl+w
             sleep 2
-            xdotool key alt+tab
+            # xdotool key alt+tab
         else
             xdg-open 'https://github.com/web-customer'
         fi
