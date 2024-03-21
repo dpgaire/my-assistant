@@ -36,8 +36,8 @@ commit_and_push() {
             simulate_mouse_click 1141 336
             sleep 2
             simulate_key_press "Return"
-            sleep 3
-            xdotool type "this is the static description"
+            # sleep 3
+            # xdotool type "this is the static description"
             sleep 3
             simulate_mouse_click 640 600
             sleep 2
