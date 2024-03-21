@@ -6,6 +6,7 @@
 #merge-pull-resquest: x:517 y:833 screen:0 window:71303217
 #confirm_merge: x:491 y:861 screen:0 window:71303217
 #finally_control: x:491 y:861 screen:0 window:71303217
+#why 
 
 # Function to simulate a key press.
 simulate_key_press() {
