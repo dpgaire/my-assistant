@@ -31,7 +31,7 @@ commit_and_push() {
     if [ "$create_pull_request" = "yes" ]; then
         read -p "Enter user or admin for pull request: " mode
         if [ "$mode" = "admin" ]; then
-            pull_request_url='https://github.com/dpgaire/my-assistant'
+            xdg-open 'https://github.com/dpgaire/my-assistant'
             sleep 4
             simulate_mouse_click 1141 336
             sleep 1
@@ -61,9 +61,9 @@ commit_and_push() {
             sleep 2
             xdotool key alt+tab
         else
-            pull_request_url='https://github.com/web-customer'
+            xdg-open 'https://github.com/web-customer'
         fi
-        xdg-open "$pull_request_url"
+        # xdg-open "$pull_request_url"
     fi
 }
 
